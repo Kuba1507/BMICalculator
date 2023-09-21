@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55566defb0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="app-header">
+            <h1>Kalkulator BMI</h1>
+        </div>
+        <div class="app-body">
+            <div class="left-side">
+                <img src="img/gym.svg" alt="Trenująca osoba" class="image">
+            </div>
+            <div class="right-side">
+                <p>Wybierz swoją płeć:</p>
+                <div class="sex-box">
+                    <button class="male"><i class="fa-solid fa-mars"></i></button>
+                    <button class="female"><i class="fa-solid fa-venus"></i></button>
+                </div>
+                <p>Ile masz lat?</p>
+                <input type="number" id="age" placeholder="Wiek [lata]">
+                <p>Ile masz wzrostu?</p>
+                <input type="number" id="height" placeholder="Wzrost [cm]">
+                <p>Ile ważysz?</p>
+                <input type="number" id="weight" placeholder="Waga [kg]">
+                <button class="calculate">Oblicz</button>
+                <p class="warning"></p>
+            </div>
+        </div>
+    </div>
+    <div class="result-popup">
+        <p>Twoje bmi wynosi:</p>
+        <span class="result"></span>
+        <span class="characteristic"></span>
+        <button class="close-popup">Zamknij</button>
+    </div>
+    <div class="shadow"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
